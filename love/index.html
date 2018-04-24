@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh">
 <head>
 	<title>Our Love Story</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -10,68 +10,45 @@
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
 	</style>
-	<link href="https://files.cnblogs.com/files/luckyxiaoxuan/default.css" type="text/css" rel="stylesheet">
+	<link href="https://files.cnblogs.com/files/luckyxiaoxuan/default_dev.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="https://files.cnblogs.com/files/luckyxiaoxuan/jquery.js"></script>
 	<script type="text/javascript" src="https://files.cnblogs.com/files/luckyxiaoxuan/garden.js"></script>
-    <script type="text/javascript" src="https://files.cnblogs.com/files/luckyxiaoxuan/functions.js"></script>
+    <script type="text/javascript" src="https://files.cnblogs.com/files/luckyxiaoxuan/functions_dev.js"></script>
 </head>
 
 <body>
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
-				<span class="comments">/**</span><br>
-				<span class="space"><span class="comments">* We are both Fudan SSers and programmers,</span><br>
-				<span class="space"><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br>
-				<span class="space"><span class="comments">*/</span><br>
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br>
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br>
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br>
-				i.love(u);<br>
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br>
-				u.accepted();<br>
-				<span class="comments">// Since then, I miss u every day.</span><br>
-				i.miss(u);<br>
-				<span class="comments">// And take care of u and our love.</span><br>
-				i.takeCareOf(u);<br>
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br>
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br>
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br>
-				<span class="keyword">while</span> (isHesitate) {<br>
-				<span class="placeholder">i.waitFor(u);<br>
-				<span class="placeholder"><span class="comments">// I think it is an important decision</span><br>
-				<span class="placeholder"><span class="comments">// and you should think it over.</span><br>
-				<span class="placeholder">isHesitate = u.thinkOver();<br>
-				}<br>
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br>
-				i.marry(u);<br>
-				i.liveHappilyWith(u);<br>
-			</span></span></span></span></span></span></span></div>
+				亲爱哒，<br><br>
+				从认识到恋爱再到现在结婚的我们，似乎一切都是顺其自然，没有正式的表白，也没有正式的求婚，作为男生我知道这是亏欠你的。<br><br>
+				我希望在大众面前展现我对你的爱，却又羞于表达出来。此刻，在这里，我真心的对你说：<br><br>
+				宝宝，记得我经常对你说的那句话，‘亲爱哒，乖一点嘛，这样我们都很开心’，真的，我最大的希望就是我们两个人在一起不为小事而烦恼，
+				能开开心心的过一辈子。我有房、有车，虽然没什么钱，但我还年轻，能够赚钱养你一辈子，同样还有一颗陪你到老的心，还能为你洗一辈子的碗，
+				还能容忍你偶尔的小脾气。所以，跟着我就准备好吃香的喝辣的吧！<br><br>
+				我这人比较愚钝，有时候也会犯一些小错误，希望宝宝也能多一些包容和谅解。以后的日子还长，我们共同努力，开开心心过好每一天！
+			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Minyue, I have fallen in love with you for
+						亲爱的, 从相识相知到相爱，我们在一起经历了
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						Love u forever and ever.<br>
-						<div class="signature">- hackerzhou</div>
+						<span style="margin-right: 100px;">永远爱你的</span><br> 
+						<div class="signature">- luckyShane</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/" target="_blank" rel="noopener">FlowerPower</a> project.<br>
-			Copyright © 2011 <a href="http://hackerzhou.me" target="_blank" rel="noopener">hackerzhou.me</a> 2009-2011
 		</div>
 	</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2010, 10, 2);
-		together.setHours(20);
+		together.setFullYear(2016, 2, 8);
+		together.setHours(10);
 		together.setMinutes(0);
 		together.setSeconds(0);
 		together.setMilliseconds(0);
@@ -82,8 +59,6 @@
 			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
 			document.body.appendChild(msg);
 			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
 		    document.execCommand("stop");
 		} else {
 			setTimeout(function () {
